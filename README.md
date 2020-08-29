@@ -5,7 +5,7 @@ cd mavenapp
 ```
 mvn archetype:generate -DgroupId=com.darealpunjabi -DartifactId=HelloWorld \
   -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
-
+```
 
 cd HelloWorld
 
