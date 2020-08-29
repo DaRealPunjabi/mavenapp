@@ -18,6 +18,7 @@ add the following to pom.xml
 ```
 
 mvn clean compile
+
 cd target/classes
 
 java com.darealpunjabi.App
