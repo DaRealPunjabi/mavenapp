@@ -12,11 +12,11 @@ mvn archetype:generate -DgroupId=com.darealpunjabi\
 
 ## Configure compiler version
 
-Add the following to pom.xml
-
 ```
 cd HelloTomcat
 ```
+
+Add the following to pom.xml
 
 ```
   <properties>
@@ -79,6 +79,8 @@ public class HelloServlet extends HttpServlet {
 ```
 
 ## Add the servlet dependency
+
+Add the following to pom.xml
 
 ```
     <dependency>
