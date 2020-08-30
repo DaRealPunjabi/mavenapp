@@ -80,7 +80,7 @@ gcloud compute firewall-rules create jenkins-allow-ingress \
 From the browser
 
 ```
-http://35.230.134.193:9090
+http://<external-ip-address>:9090
 
 Apache Tomcat/9.0.37
 ```
