@@ -1,15 +1,21 @@
-# mavenapp HelloWorld app
+# HelloWorld app - Build Instructions
 
-cd mavenapp
+## Generate the code
 
 ```
+cd mavenapp
 mvn archetype:generate -DgroupId=com.darealpunjabi -DartifactId=HelloWorld \
   -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
-cd HelloWorld
+## Configure compile config
 
-add the following to pom.xml
+Add the following to pom.xml
+
+```
+cd HelloWorld
+```
+
 ```
   <properties>
        <maven.compiler.source>1.8</maven.compiler.source>
@@ -17,17 +23,28 @@ add the following to pom.xml
   </properties>
 ```
 
-mvn clean compile
-
-cd target/classes
-
-java com.darealpunjabi.App
+## Compile the code
 
 ```
+mvn clean compile
+```
+
+## Run the code
+
+```
+cd target/classes
+java com.darealpunjabi.App
 Hello World!
 ```
 
-add the following to pom.xml
+## Build a jar file
+
+Add the following to pom.xml
+
+```
+cd ../..
+```
+
 ```
 <build>
   <plugins>
@@ -50,10 +67,8 @@ add the following to pom.xml
 </build>
 ```
 
-mvn clean package
-
-java -jar ./target/HelloWorld-1.0-SNAPSHOT.jar
-
 ```
+mvn clean package
+java -jar ./target/HelloWorld-1.0-SNAPSHOT.jar
 Hello World!
 ```
