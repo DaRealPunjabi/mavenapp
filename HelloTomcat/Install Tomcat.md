@@ -55,6 +55,20 @@ roles : manager-script & admin-gui
   <user username="darealpunjabi" password="my-password" roles="manager-script,admin-gui"/>
 ```
 
+## Comment RemoteAddrValve to have un-restrict access to Tomcat
+
+Update /opt/tomcat/apache-tomcat-9.0.37/webapps/manager/META-INF/context.xml
+
+```
+<Context antiResourceLocking="false" privileged="true" >
+  <!--      
+        <Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" />
+  -->
+  <Manager sessionAttributeValueClassNameFilter="java\.lang\.(?:Boolean|Integer|Long|Number|String)|org\.apache\.catalina\.filters\.CsrfPreventionFilter\$LruCache(?:\$1)?|java\.util\.(?:Linked)?HashMap"/>
+</Context>
+```
+
 ## Start Stop the tomcat server
 
 ```
