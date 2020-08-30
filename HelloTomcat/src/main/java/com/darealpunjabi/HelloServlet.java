@@ -26,7 +26,7 @@ public class HelloServlet extends HttpServlet {
         writer.println("<body bgcolor=white>");
 
         writer.println("<h1>");
-        writer.println("Hello World, DaRealPunjabi");
+        writer.println("Hello World, Version 1");
         writer.println("</h1>");
  
         writer.println("</body>");
