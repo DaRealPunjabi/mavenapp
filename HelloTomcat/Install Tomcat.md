@@ -55,7 +55,7 @@ roles : manager-script & admin-gui
   <user username="darealpunjabi" password="my-password" roles="manager-script,admin-gui"/>
 ```
 
-## Comment RemoteAddrValve to have un-restrict access to Tomcat
+## Comment RemoteAddrValve to enable un-restricted access to Tomcat
 
 Update /opt/tomcat/apache-tomcat-9.0.37/webapps/manager/META-INF/context.xml
 
