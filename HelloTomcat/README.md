@@ -1,6 +1,6 @@
-# HelloWorld app - Build Instructions
+# HelloTomcat  - Build Instructions
 
-## Generate the code
+## Generate the project structure
 
 ```
 cd mavenapp
@@ -8,7 +8,7 @@ mvn archetype:generate -DgroupId=com.darealpunjabi -DartifactId=HelloWorld \
   -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
 ```
 
-## Configure compiler version
+## Configure compile config
 
 Add the following to pom.xml
 
