@@ -14,8 +14,8 @@ public class HelloServlet extends HttpServlet {
                          HttpServletResponse response) throws ServletException, IOException
     {
         // Very simple - just return some plain text
-        PrintWriter writer = response.getWriter();
-        writer.print("Hello World");
+        //PrintWriter writer = response.getWriter();
+        //writer.print("Hello World");
 
         response.setContentType("text/html");
         PrintWriter writer = response.getWriter();        
