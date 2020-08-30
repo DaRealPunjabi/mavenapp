@@ -64,6 +64,7 @@ roles : manager-script & admin-gui
 
 ## Ensure firewall rule allow traffic on port 9090
 
+```
 gcloud compute firewall-rules create jenkins-allow-ingress \
   --direction=INGRESS \
   --priority=1000 \
@@ -72,6 +73,7 @@ gcloud compute firewall-rules create jenkins-allow-ingress \
   --source-ranges=0.0.0.0/0 \
   --rules=tcp:8080,tcp:9090 \
   --network=default
+```
 
 ## Test tomcat
 
